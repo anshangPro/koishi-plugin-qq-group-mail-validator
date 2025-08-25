@@ -1,0 +1,32 @@
+{
+  "name": "koishi-plugin-qq-group-mail-validator",
+  "description": "一个qq辅助审批入群插件，仅支持onebot适配器。可要求成员入群时进行邮箱验证(未做持久化)。",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshangPro/koishi-plugin-qq-group-mail-validator.git"
+  },
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "plugin"
+  ],
+  "peerDependencies": {
+    "koishi": "^4.18.7"
+  },
+  "dependencies": {
+    "@koishijs/plugin-adapter-mail": "^2.3.2",
+    "koishi-plugin-adapter-onebot": "^6.8.0",
+    "nodemailer": "^7.0.5"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^7"
+  }
+}
