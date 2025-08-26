@@ -74,12 +74,6 @@ async function sendVerificationCode(ctx: Context, config: Config, comment, userI
 }
 
 export function apply(ctx: Context, config: Config) {
-ctx.command('test', '测试命令')
-  .action(async ({ session }) => {
-    logger.error(config.groupMailSuffixes?.[925728476])
-    await session.send('测试成功');
-  });
-
   // 监听入群申请（onebot）
   ctx.on('guild-member-request', async (session: Session) => {
     if (session.platform !== 'onebot') return
